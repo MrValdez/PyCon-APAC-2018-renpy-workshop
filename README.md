@@ -1,8 +1,12 @@
 Making a visual novel using Ren'Py
 
+![](https://raw.githubusercontent.com/MrValdez/PyCon-APAC-2018-renpy-workshop/master/renpy-logo.png)
+
 # Introduction
 
 Ren'py is a game engine that have its own scripting language built especially for visual novels. Ren'py is built on Python and Pygame. You can run your own python or pygame code within the engine.
+
+Ren'py can create binary executables for Windows, Mac OS, Linux, Chrome OS, iOS, and Android.
 
 Visual novels are a genre of video games similar to choose-your-own-adventure books. VNs can get a following and it is uncommon to find [VNs adapted as an anime](https://www.anime-planet.com/anime/tags/based-on-a-visual-novel). Ren'py have [many games created and sold online](https://games.renpy.org/). My personal favorite is [Long Live the Queen](https://store.steampowered.com/app/251990/Long_Live_The_Queen/)
 
