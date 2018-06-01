@@ -10,7 +10,7 @@ Ren'py can create binary executables for Windows, Mac OS, Linux, Chrome OS, iOS,
 
 Visual Novels are a genre of video games similar to choose-your-own-adventure books. It is uncommon to have [popular Visual Novels adapted as an anime](https://www.anime-planet.com/anime/tags/based-on-a-visual-novel). Ren'py have [many games created and sold online](https://games.renpy.org/). Two of my personal favorites Ren'py game are [Long Live the Queen](https://store.steampowered.com/app/251990/Long_Live_The_Queen/) and [Doki Doki Literature Club](http://store.steampowered.com/app/698780/Doki_Doki_Literature_Club/) (WARNING: Doki Doki Literature Club is not suitable for children or those who are easily disturbed).
 
-[![Long Live the Queen Trailer](https://img.youtube.com/vi/IvmUuJVGcIM/0.jpg)](https://www.youtube.com/watch?v=IvmUuJVGcIM)
+[![Long Live the Queen Trailer](https://img.youtube.com/vi/IvmUuJVGcIM/0.jpg)](https://www.youtube.com/watch?v=IvmUuJVGcIM)  
 *(Long Live the Queen trailer)*
 
 
