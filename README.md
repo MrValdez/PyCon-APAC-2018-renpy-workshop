@@ -49,9 +49,9 @@ label start:
 3. Run the project. Take note that the indentation uses space and not tabs.
 
 Explanation:
-> label start:  # this is the entry point for the visual novel  
-> "Hello World" # its obvious, but try to explain to yourself what this line does.  
-> return        # this exits the game  
+|label start:|this is the entry point for the visual novel|
+|"Hello World"|its obvious, but try to explain to yourself what this line does.|
+|return|this exits the game|
 
 4. Once you understand the above code, make this modification:
 
@@ -61,9 +61,7 @@ label start:
     return
 ```
 
-Change "Your name" to your real/fake name. Try to explain to yourself what adding this does.
-
-...
+Change "Your name" to your real/fake name. Try to explain to yourself the effect of what we have added.
 
 Explanation:
 
