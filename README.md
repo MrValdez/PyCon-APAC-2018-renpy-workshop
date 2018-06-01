@@ -19,7 +19,11 @@ Visual novels are a genre of video games similar to choose-your-own-adventure bo
  b. Change Text Editor to "System Editor"  
  c. Click return to get out of the preferences  
 ![](https://raw.githubusercontent.com/MrValdez/PyCon-APAC-2018-renpy-workshop/master/text-editor-preferences.png)
-4. Click on "script.rpy". On Windows, you should get a dialog for setting the program to run when .rpy files are opened. Find your IDE. If you can't find your IDE, expand the dialog box and navigate to your IDE's executable.
+
+4. 
+![](https://raw.githubusercontent.com/MrValdez/PyCon-APAC-2018-renpy-workshop/master/open-script-rpy.png)
+
+Click on "script.rpy". On Windows, you should get a dialog for setting the program to run when .rpy files are opened. Find your IDE. If you can't find your IDE, expand the dialog box and navigate to your IDE's executable.
 ![](https://raw.githubusercontent.com/MrValdez/PyCon-APAC-2018-renpy-workshop/master/rpy-association.png)
 5. Click on "script.rpy" again. It should open up your IDE.
 
