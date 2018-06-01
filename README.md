@@ -52,12 +52,12 @@ label start:
     return
 ```
 
-4. Run the project. Take note that the indentation uses space and not tabs.
+4. Run the project. Take note that indentation in **Ren'py uses space** and not tabs.
 
 | Line | Explanation |
 |---|---|
 |label start:|this is the entry point for the visual novel|
-|"Hello World"|its obvious, but try to explain to yourself what this line does.|
+|"Hello World"|it should be obvious, but try to explain to yourself what this line does|
 |return|this exits the game|
 
 5. Once you understand the above code, make this modification:
@@ -74,7 +74,9 @@ Explanation:
 
 "Hello World" by itself shows the narrator speaking the words (traditionally, in visual novels, an unnamed voice comes from the narrator). By adding a string to the left side, we can have a character speak the words.
 
-6. It can be inconvenient to hardcode the names of your characters. What if we have a long script and need to change the name of one of our characters? In ren'py, we can make variables
+6. It can be inconvenient to hardcode the names of your characters. What if we have a large ren'py script and need to change the name for one of our characters?
+
+In Ren'py, we can make variables:
 
 ```
 define r = Character("Your name")
@@ -86,7 +88,7 @@ label start:
 
 Like variables in programming, you can name your variables with anything you want.
 
-7.
+7. Ren'py can help you quickly see changes in your code.
 
 ```
 define r = Character("Your name")
@@ -106,9 +108,11 @@ label start:
     return
 ```
 
-Go back to the running program. No surprise, the text still reads "I am happy". Now, press Shift+R. This should reload the script and change the text. This is how you reload your game so you can immediately see the changes.
+Go back to the running program. No surprise, the text still reads "I am happy".
 
-8.
+Now, press Shift+R. This should reload the script and change the text. This is how you reload your game, so you can immediately see the changes.
+
+8. 
 
 ```
 define r = Character("Your name")
@@ -121,7 +125,7 @@ label start:
 
 Run the above program. In visual novels, to go to the next dialogue, either press any key or click on the screen. To go back to the previous dialogue, press PgUp or mouse scroll up.
 
-9.
+9. We should be making a video game. We need pictures of our characters and the place where they are. Let's start with the location.
 
 ```
 define r = Character("Your name")
@@ -135,9 +139,9 @@ label start:
     return
 ```
 
-Run the above program. This adds a background called black. "with fade" is a command to transition from one scene to the other. There are other examples of transitions that you can look at the online manual
+Run the above program. "scene adds a background called black. "with fade" is a command to transition from one scene to the other. There are other examples of transitions that you can look at the online manual
 
-10.
+10. But what about the characters?
 
 ```
 define r = Character("Your name")
@@ -152,13 +156,13 @@ label start:
     return
 ```
 
-Add the line above but change "firstname" to your own first name (small letters).
+Add the line above but change "firstname" to your own first name (small letters, no space).
 
-The show command is how you present a character to the player. You might notice that the character is a blank paper doll. This is the default image for characters in ren'py. 
+The show command is how you present a character to the player. The syntax is "show <character> <emotion>". You might notice that the character is a blank paper doll. This is the default image for characters in ren'py. 
 
-Tip: When making games, one of the excuses I heard is that people need to have the BEST art before doing work on the game. This default paper doll image can be used while your game script is being developed.
+Tip: When making games, one of the excuses I hear is that people need to have the BEST art before doing work on the game. This default paper doll image can be used while your game script is being developed.
 
-11. Time to add some images. Go back to the projects selection and click on the images directory.
+11. Time to add some real images, instead of placeholders. Go back to the projects selection and click on the images directory.
 
 ![](https://raw.githubusercontent.com/MrValdez/PyCon-APAC-2018-renpy-workshop/master/images-folder-select.png)
 
@@ -243,9 +247,7 @@ label bad_ending:
     return
 ```
 
-"menu" is the keyword to add user interactivity. "jump" will bring the user to the label somewhere in the script (script management is something you need to learn if you started working on long scripts. But as a beginner, I recommend starting small).
-
-Reminder that "return" exits the program.
+"menu" is the keyword to add user interactivity. "jump" will bring the user to the label somewhere in the script. Remember that "return" exits the program.
 
 15. Hiding characters and adding special effect
 
