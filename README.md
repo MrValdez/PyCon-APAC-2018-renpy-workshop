@@ -10,6 +10,8 @@ Ren'py can create binary executables for Windows, Mac OS, Linux, Chrome OS, iOS,
 
 Visual Novels are a genre of video games similar to choose-your-own-adventure books. It is uncommon to have [popular Visual Novels adapted as an anime](https://www.anime-planet.com/anime/tags/based-on-a-visual-novel). Ren'py have [many games created and sold online](https://games.renpy.org/). My personal favorite is [Long Live the Queen](https://store.steampowered.com/app/251990/Long_Live_The_Queen/).
 
+[![Long Live the Queen Trailer](https://img.youtube.com/vi/IvmUuJVGcIM/0.jpg)](https://www.youtube.com/watch?v=IvmUuJVGcIM)
+
 # Pre-requisites
 
 1. Download Ren'py from https://www.renpy.org/
