@@ -14,9 +14,9 @@ Visual novels are a genre of video games similar to choose-your-own-adventure bo
  a. Click preferences
  b. Change Text Editor to "System Editor"
  c Click return to get out of the preferences.
-![](text editor preferences.png)
+![](https://raw.githubusercontent.com/MrValdez/PyCon-APAC-2018-renpy-workshop/master/text-editor-preferences.png)
 1. Click on "script.rpy". On Windows, you should get a dialog for setting the program to run when .rpy files are opened. Find your IDE. If you can't find your IDE, expand the dialog box and navigate to your IDE's executable.
-![](rpy association.png)
+![](https://raw.githubusercontent.com/MrValdez/PyCon-APAC-2018-renpy-workshop/master/rpy-association.png)
 1. Click on "script.rpy" again. It should open up your IDE.
 
 # Creating your first project
@@ -24,7 +24,7 @@ Visual novels are a genre of video games similar to choose-your-own-adventure bo
 1. Click on Create New Project. If this is the first time you run ren'py, it will ask you where you would want to put your project files. Select a directory.
 1. For project name, call it "PyCon APAC". Just select the default resolution and choose a color scheme you like. You can change these properties later in options.rpy.
 1. Make sure that "PyCon APAC" is highlighted on the projects list. Click on "script.rpy"
-![](projects select.png)
+![](https://raw.githubusercontent.com/MrValdez/PyCon-APAC-2018-renpy-workshop/master/projects-select.png)
 
 # Creating your first visual novel
 
@@ -148,11 +148,11 @@ Tip: When making games, one of the excuses I heard is that people need to have t
 
 1. Time to add some images. Go back to the projects selection and click on the images directory.
 
-![](images folder select.png)
+![](https://raw.githubusercontent.com/MrValdez/PyCon-APAC-2018-renpy-workshop/master/images-folder-select.png)
 
 Go to the Internet and find images for one background and one character. Save the two images in the image directory (you can use png, jpg or jpeg) and name them "bg black" and "firstname sad" (again, use your own first name).
 
-![](images folder view.png)
+![](https://raw.githubusercontent.com/MrValdez/PyCon-APAC-2018-renpy-workshop/master/images-folder-view.png)
 
 Run the game. If nothing went wrong, you should be able to see both images.
 
@@ -288,7 +288,7 @@ Finally, the "hide" command will remove a character from the screen. vpunch shou
 1. Run The Question. This is a simple visual novel to demonstrate how to make a simple game. You can look into the source code and learn how they made the game.
 1. You can look for examples of transitions and positions in the Tutorial project and in the documentation manual (found at the bottom-left of Ren'Py)
 
-![](documentation.png)
+![](https://raw.githubusercontent.com/MrValdez/PyCon-APAC-2018-renpy-workshop/master/documentation.png)
 
 # Common issues
 1. Ren'py exclusive use spaces for indentation, not tabs. It will complain if you used tabs. Your IDE should have an option to convert tabs into spaces.
