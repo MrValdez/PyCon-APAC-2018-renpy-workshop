@@ -8,37 +8,39 @@ Ren'py is a game engine that have its own scripting language built especially fo
 
 Ren'py can create binary executables for Windows, Mac OS, Linux, Chrome OS, iOS, and Android.
 
-Visual novels are a genre of video games similar to choose-your-own-adventure books. VNs can get a following and it is uncommon to find [VNs adapted as an anime](https://www.anime-planet.com/anime/tags/based-on-a-visual-novel). Ren'py have [many games created and sold online](https://games.renpy.org/). My personal favorite is [Long Live the Queen](https://store.steampowered.com/app/251990/Long_Live_The_Queen/)
+Visual Novels are a genre of video games similar to choose-your-own-adventure books. It is uncommon to have [popular Visual Novels adapted as an anime](https://www.anime-planet.com/anime/tags/based-on-a-visual-novel). Ren'py have [many games created and sold online](https://games.renpy.org/). My personal favorite is [Long Live the Queen](https://store.steampowered.com/app/251990/Long_Live_The_Queen/).
 
 # Pre-requisites
 
 1. Download Ren'py from https://www.renpy.org/
-2. If you do not have an IDE (that is capable of turning tabs into spaces), I recommend getting and installing [notepad2](http://www.flos-freeware.ch/notepad2.html).
-3. Open Ren'py. Wait for it to run. It takes a while.  
+2. If you do not have an IDE that is capable of turning tabs into spaces, I recommend getting and installing [notepad2](http://www.flos-freeware.ch/notepad2.html). Most IDEs have this feature, so check your IDE's manual.
+3. Open Ren'py. Wait for it to run. It takes a while to start up. We need to setup your IDE with the following steps:  
  a. Click preferences  
  b. Change Text Editor to "System Editor"  
- c. Click return to get out of the preferences  
+ c. Click return to get out of the preferences screen
 ![](https://raw.githubusercontent.com/MrValdez/PyCon-APAC-2018-renpy-workshop/master/text-editor-preferences.png)
 
-4. 
+4. Next, we need to associate the .rpy extension to your IDE. Click on "script.rpy". 
 ![](https://raw.githubusercontent.com/MrValdez/PyCon-APAC-2018-renpy-workshop/master/open-script-rpy.png)
 
-Click on "script.rpy". On Windows, you should get a dialog for setting the program to run when .rpy files are opened. Find your IDE. If you can't find your IDE, expand the dialog box and navigate to your IDE's executable.
+On Windows, you should get a dialog for setting the program to run when .rpy files are opened. Find your IDE. If you can't find your IDE, expand the dialog box and navigate to your IDE's executable.
 ![](https://raw.githubusercontent.com/MrValdez/PyCon-APAC-2018-renpy-workshop/master/rpy-association.png)
 
 5. Click on "script.rpy" again. It should open up your IDE.
 
+Alternatively, you can open "script.rpy" manually via your IDE's open file feature.
+
 # Creating your first project
 
-1. Click on Create New Project. If this is the first time you run ren'py, it will ask you where you would want to put your project files. Select a directory.
+1. Click on Create New Project. If this is the first time you created a Ren'py project, it will ask you where you would want to put your project files. Select a directory.
 2. For project name, call it "PyCon APAC". Just select the default resolution and choose a color scheme you like. You can change these properties later in options.rpy.
-3. Make sure that "PyCon APAC" is highlighted on the projects list. Click on "script.rpy"
-![](https://raw.githubusercontent.com/MrValdez/PyCon-APAC-2018-renpy-workshop/master/projects-select.png)
 
 # Creating your first visual novel
 
-1. Select all the text in "script.rpy". Delete them all. We will not be using this for our first visual novel
-2. Type in the following:
+1. Make sure that "PyCon APAC" is highlighted on the projects list. Click on "script.rpy"
+![](https://raw.githubusercontent.com/MrValdez/PyCon-APAC-2018-renpy-workshop/master/projects-select.png)
+2. Select all the text in "script.rpy". Delete them all. We will not be using this for our first visual novel
+3. Type in the following:
 
 ```
 label start:
@@ -46,7 +48,7 @@ label start:
     return
 ```
 
-3. Run the project. Take note that the indentation uses space and not tabs.
+4. Run the project. Take note that the indentation uses space and not tabs.
 
 | Line | Explanation |
 |---|---|
@@ -54,7 +56,7 @@ label start:
 |"Hello World"|its obvious, but try to explain to yourself what this line does.|
 |return|this exits the game|
 
-4. Once you understand the above code, make this modification:
+5. Once you understand the above code, make this modification:
 
 ```
 label start:
@@ -68,7 +70,7 @@ Explanation:
 
 "Hello World" by itself shows the narrator speaking the words (traditionally, in visual novels, an unnamed voice comes from the narrator). By adding a string to the left side, we can have a character speak the words.
 
-5. It can be inconvenient to hardcode the names of your characters. What if we have a long script and need to change the name of one of our characters? In ren'py, we can make variables
+6. It can be inconvenient to hardcode the names of your characters. What if we have a long script and need to change the name of one of our characters? In ren'py, we can make variables
 
 ```
 define r = Character("Your name")
@@ -80,7 +82,7 @@ label start:
 
 Like variables in programming, you can name your variables with anything you want.
 
-6.
+7.
 
 ```
 define r = Character("Your name")
@@ -102,7 +104,7 @@ label start:
 
 Go back to the running program. No surprise, the text still reads "I am happy". Now, press Shift+R. This should reload the script and change the text. This is how you reload your game so you can immediately see the changes.
 
-7.
+8.
 
 ```
 define r = Character("Your name")
@@ -115,7 +117,7 @@ label start:
 
 Run the above program. In visual novels, to go to the next dialogue, either press any key or click on the screen. To go back to the previous dialogue, press PgUp or mouse scroll up.
 
-8.
+9.
 
 ```
 define r = Character("Your name")
@@ -131,7 +133,7 @@ label start:
 
 Run the above program. This adds a background called black. "with fade" is a command to transition from one scene to the other. There are other examples of transitions that you can look at the online manual
 
-9.
+10.
 
 ```
 define r = Character("Your name")
@@ -152,7 +154,7 @@ The show command is how you present a character to the player. You might notice 
 
 Tip: When making games, one of the excuses I heard is that people need to have the BEST art before doing work on the game. This default paper doll image can be used while your game script is being developed.
 
-10. Time to add some images. Go back to the projects selection and click on the images directory.
+11. Time to add some images. Go back to the projects selection and click on the images directory.
 
 ![](https://raw.githubusercontent.com/MrValdez/PyCon-APAC-2018-renpy-workshop/master/images-folder-select.png)
 
@@ -164,7 +166,7 @@ Run the game. If nothing went wrong, you should be able to see both images.
 
 Try to explain to yourself how scene and show works with images.
 
-11. You might have noticed that the character image is at the bottom of the screen. We can change the position with the "at" keyword:
+12. You might have noticed that the character image is at the bottom of the screen. We can change the position with the "at" keyword:
 
 ```
 define r = Character("Your name")
@@ -181,7 +183,7 @@ label start:
 
 There are other locations that can be used such as center and truecenter. You can check them out in the manual.
 
-12. Let's add a new character
+13. Let's add a new character
 
 ```
 define r = Character("Your name")
@@ -203,7 +205,7 @@ label start:
 
 Based on what you've learned, try to explain to yourself the newly added lines. Explaining things to yourself is helpful when learning something new
 
-1. Now let's add a decision for the player:
+14. Now let's add a decision for the player:
 
 ```
 define r = Character("Your name")
@@ -241,7 +243,7 @@ label bad_ending:
 
 Reminder that "return" exits the program.
 
-1. Hiding characters and adding special effect
+15. Hiding characters and adding special effect
 
 ```
 define r = Character("Your name")
@@ -283,15 +285,15 @@ Finally, the "hide" command will remove a character from the screen. vpunch shou
 
 # what's next?
 1. For your next project, I suggest starting with a simple 3-act story. The 3 acts will be the introduction, the conflict, and the resolution.
-1. First think of a genre. It can be romance, horror, action, or anything you want. Romance is one of the easier genres to write.
-1. Next think of 3 location for each act.
+1. Decide of your story genre. It can be romance, horror, action, or anything you want. Tip: romance is one of the easier genres to write.
+1. Next think of 3 locations/settings for each act.
 1. The first act will be the introduction of 3 characters: the hero, the villain, and the supporting character (or second love interest in most romance stories)
 1. The second act will be the conflict. Make the story on how the conflict happens
 1. The final act will be all about the resolution. How should the story end? What decisions will lead to the different endings?
 
 # Recommended reading
-1. Run the Tutorial project. It contains a lot of examples including how to play movies, add minigames using pygame, inputs from other players, different transitions, and custom animation.
 1. Run The Question. This is a simple visual novel to demonstrate how to make a simple game. You can look into the source code and learn how they made the game.
+1. Run the Tutorial project. It contains a lot of code examples including how to play movies, add minigames using pygame, inputs from other players, different transitions, and custom animation.
 1. You can look for examples of transitions and positions in the Tutorial project and in the documentation manual (found at the bottom-left of Ren'Py)
 
 ![](https://raw.githubusercontent.com/MrValdez/PyCon-APAC-2018-renpy-workshop/master/documentation.png)
