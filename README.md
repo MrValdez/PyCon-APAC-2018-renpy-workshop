@@ -14,9 +14,9 @@ Visual novels are a genre of video games similar to choose-your-own-adventure bo
  a. Click preferences
  b. Change Text Editor to "System Editor"
  c Click return to get out of the preferences.
- text editor preferences.png
+![](text editor preferences.png)
 1. Click on "script.rpy". On Windows, you should get a dialog for setting the program to run when .rpy files are opened. Find your IDE. If you can't find your IDE, expand the dialog box and navigate to your IDE's executable.
- rpy association.png
+![](rpy association.png)
 1. Click on "script.rpy" again. It should open up your IDE.
 
 # Creating your first project
@@ -24,18 +24,18 @@ Visual novels are a genre of video games similar to choose-your-own-adventure bo
 1. Click on Create New Project. If this is the first time you run ren'py, it will ask you where you would want to put your project files. Select a directory.
 1. For project name, call it "PyCon APAC". Just select the default resolution and choose a color scheme you like. You can change these properties later in options.rpy.
 1. Make sure that "PyCon APAC" is highlighted on the projects list. Click on "script.rpy"
-projects select.png
+![](projects select.png)
 
 # Creating your first visual novel
 
 1. Select all the text in "script.rpy". Delete them all. We will not be using this for our first visual novel
 1. Type in the following:
 
-[code]
+```
 label start:
     "Hello World"
     return
-[/code]
+```
 
 1. Run the project. Take note that the indentation uses space and not tabs.
 
@@ -46,11 +46,11 @@ Explanation:
 
 1. Once you understand the above code, make this modification:
 
-[code]
+```
 label start:
     "Your name" "Hello World"
     return
-[/code]
+```
 
 Change "Your name" to your real/fake name. Try to explain to yourself what adding this does.
 
@@ -64,54 +64,54 @@ Explanation:
 
 1. It can be inconvenient to hardcode the names of your characters. What if we have a long script and need to change the name of one of our characters? In ren'py, we can make variables
 
-[code]
+```
 define r = Character("Your name")
 
 label start:
     r "Hello World"
     return
-[/code]
+```
 
 Like variables in programming, you can name your variables with anything you want.
 
 1.
 
-[code]
+```
 define r = Character("Your name")
 
 label start:
     r "I am happy"
     return
-[/code]
+```
 
 Run the above program. Now, while the game is still running, go back to the editor and do the following modifications:
 
-[code]
+```
 define r = Character("Your name")
 
 label start:
     r "I am shocked"
     return
-[/code]
+```
 
 Go back to the running program. No surprise, the text still reads "I am happy". Now, press Shift+R. This should reload the script and change the text. This is how you reload your game so you can immediately see the changes.
 
 1.
 
-[code]
+```
 define r = Character("Your name")
 
 label start:
     r "I am shocked"
     r "What is that?"
     return
-[/code]
+```
 
 Run the above program. In visual novels, to go to the next dialogue, either press any key or click on the screen. To go back to the previous dialogue, press PgUp or mouse scroll up.
 
 1.
 
-[code]
+```
 define r = Character("Your name")
 
 label start:
@@ -121,13 +121,13 @@ label start:
     r "I am shocked"
     r "What is that?"
     return
-[/code]
+```
 
 Run the above program. This adds a background called black. "with fade" is a command to transition from one scene to the other. There are other examples of transitions that you can look at the online manual
 
 1.
 
-[code]
+```
 define r = Character("Your name")
 
 label start:
@@ -138,7 +138,7 @@ label start:
     r "I am shocked"
     r "What is that?"
     return
-[/code]
+```
 
 Add the line above but change "firstname" to your own first name (small letters).
 
@@ -148,11 +148,11 @@ Tip: When making games, one of the excuses I heard is that people need to have t
 
 1. Time to add some images. Go back to the projects selection and click on the images directory.
 
-images folder select.png
+![](images folder select.png)
 
 Go to the Internet and find images for one background and one character. Save the two images in the image directory (you can use png, jpg or jpeg) and name them "bg black" and "firstname sad" (again, use your own first name).
 
-images folder view.png
+![](images folder view.png)
 
 Run the game. If nothing went wrong, you should be able to see both images.
 
@@ -160,7 +160,7 @@ Try to explain to yourself how scene and show works with images.
 
 1. You might have noticed that the character image is at the bottom of the screen. We can change the position with the "at" keyword:
 
-[code]
+```
 define r = Character("Your name")
 
 label start:
@@ -171,13 +171,13 @@ label start:
     r "I am shocked"
     r "What is that?"
     return
-[/code]
+```
 
 There are other locations that can be used such as center and truecenter. You can check them out in the manual.
 
 1. Let's add a new character
 
-[code]
+```
 define r = Character("Your name")
 
 label start:
@@ -193,13 +193,13 @@ label start:
 
     "villain" "BWAHAHAHA"
     return
-[/code]
+```
 
 Based on what you've learned, try to explain to yourself the newly added lines. Explaining things to yourself is helpful when learning something new
 
 1. Now let's add a decision for the player:
 
-[code]
+```
 define r = Character("Your name")
 
 label start:
@@ -229,7 +229,7 @@ label dodge_ending:
 label bad_ending:
     "Bad ending"
     return
-[/code]
+```
 
 "menu" is the keyword to add user interactivity. "jump" will bring the user to the label somewhere in the script (script management is something you need to learn if you started working on long scripts. But as a beginner, I recommend starting small).
 
@@ -237,7 +237,7 @@ Reminder that "return" exits the program.
 
 1. Hiding characters and adding special effect
 
-[code]
+```
 define r = Character("Your name")
 
 label start:
@@ -271,7 +271,7 @@ label bad_ending:
     with vpunch
     "UWAAAHHHH"
     return
-[/code]
+```
 
 Finally, the "hide" command will remove a character from the screen. vpunch should be a nice surprise for you.
 
@@ -288,7 +288,7 @@ Finally, the "hide" command will remove a character from the screen. vpunch shou
 1. Run The Question. This is a simple visual novel to demonstrate how to make a simple game. You can look into the source code and learn how they made the game.
 1. You can look for examples of transitions and positions in the Tutorial project and in the documentation manual (found at the bottom-left of Ren'Py)
 
-documentation.png
+![](documentation.png)
 
 # Common issues
 1. Ren'py exclusive use spaces for indentation, not tabs. It will complain if you used tabs. Your IDE should have an option to convert tabs into spaces.
