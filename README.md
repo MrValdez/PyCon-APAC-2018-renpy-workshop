@@ -25,6 +25,7 @@ Visual novels are a genre of video games similar to choose-your-own-adventure bo
 
 Click on "script.rpy". On Windows, you should get a dialog for setting the program to run when .rpy files are opened. Find your IDE. If you can't find your IDE, expand the dialog box and navigate to your IDE's executable.
 ![](https://raw.githubusercontent.com/MrValdez/PyCon-APAC-2018-renpy-workshop/master/rpy-association.png)
+
 5. Click on "script.rpy" again. It should open up your IDE.
 
 # Creating your first project
@@ -48,9 +49,9 @@ label start:
 3. Run the project. Take note that the indentation uses space and not tabs.
 
 Explanation:
-> label start:  # this is the entry point for the visual novel 
-> "Hello World" # its obvious, but try to explain to yourself what this line does. 
-> return        # this exits the game 
+> label start:  # this is the entry point for the visual novel  
+> "Hello World" # its obvious, but try to explain to yourself what this line does.  
+> return        # this exits the game  
 
 4. Once you understand the above code, make this modification:
 
@@ -66,9 +67,7 @@ Change "Your name" to your real/fake name. Try to explain to yourself what addin
 
 Explanation:
 
-"Hello World" by itself shows the narrator [1] speaking the words. By adding a string to the left side, we can have a character speak the words.
-
-[1] traditionally, in visual novels, an unnamed voice comes from the narrator.
+"Hello World" by itself shows the narrator speaking the words (traditionally, in visual novels, an unnamed voice comes from the narrator). By adding a string to the left side, we can have a character speak the words.
 
 5. It can be inconvenient to hardcode the names of your characters. What if we have a long script and need to change the name of one of our characters? In ren'py, we can make variables
 
