@@ -48,7 +48,8 @@ label start:
 
 3. Run the project. Take note that the indentation uses space and not tabs.
 
-Explanation:
+| Line | Explanation |
+|---|---|
 |label start:|this is the entry point for the visual novel|
 |"Hello World"|its obvious, but try to explain to yourself what this line does.|
 |return|this exits the game|
