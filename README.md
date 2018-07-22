@@ -281,11 +281,14 @@ label dodge_ending:
     return
 
 label bad_ending:
+    show villain punching
     hide firstname
     with vpunch
     "UWAAAHHHH"
     return
 ```
+
+You can change the emotion of a character by just doing another "show" command. Notice that the position of the character stays the same.
 
 Finally, the "hide" command will remove a character from the screen. vpunch should be a nice surprise for you.
 
