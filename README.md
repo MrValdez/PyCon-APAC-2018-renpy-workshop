@@ -79,10 +79,10 @@ Explanation:
 In Ren'py, we can make variables:
 
 ```
-define r = Character("Your name")
+define me = Character("Your name")
 
 label start:
-    r "Hello World"
+    me "Hello World"
     return
 ```
 
@@ -91,20 +91,20 @@ Like variables in programming, you can name your variables with anything you wan
 7. Ren'py can help you quickly see changes in your code.
 
 ```
-define r = Character("Your name")
+define me = Character("Your name")
 
 label start:
-    r "I am happy"
+    me "I am happy"
     return
 ```
 
 Run the above program. Now, while the game is still running, go back to the editor and do the following modifications:
 
 ```
-define r = Character("Your name")
+define me = Character("Your name")
 
 label start:
-    r "I am shocked"
+    me "I am shocked"
     return
 ```
 
@@ -115,11 +115,11 @@ Now, press Shift+R. This should reload the script and change the text. This is h
 8. 
 
 ```
-define r = Character("Your name")
+define me = Character("Your name")
 
 label start:
-    r "I am shocked"
-    r "What is that?"
+    me "I am shocked"
+    me "What is that?"
     return
 ```
 
@@ -128,14 +128,14 @@ Run the above program. In visual novels, to go to the next dialogue, either pres
 9. We should be making a video game. We need pictures of our characters and the place where they are. Let's start with the location.
 
 ```
-define r = Character("Your name")
+define me = Character("Your name")
 
 label start:
     scene bg black
     with fade
 
-    r "I am shocked"
-    r "What is that?"
+    me "I am shocked"
+    me "What is that?"
     return
 ```
 
@@ -144,15 +144,15 @@ Run the above program. "scene adds a background called black. "with fade" is a c
 10. But what about the characters?
 
 ```
-define r = Character("Your name")
+define me = Character("Your name")
 
 label start:
     scene bg black
     with fade
 
     show firstname sad
-    r "I am shocked"
-    r "What is that?"
+    me "I am shocked"
+    me "What is that?"
     return
 ```
 
@@ -177,15 +177,15 @@ Try to explain to yourself how scene and show works with images.
 12. You might have noticed that the character image is at the bottom of the screen. We can change the position with the "at" keyword:
 
 ```
-define r = Character("Your name")
+define me = Character("Your name")
 
 label start:
     scene bg black
     with fade
 
     show firstname sad at top
-    r "I am shocked"
-    r "What is that?"
+    me "I am shocked"
+    me "What is that?"
     return
 ```
 
@@ -194,15 +194,15 @@ There are other locations that can be used such as center and truecenter. You ca
 13. Let's add a new character
 
 ```
-define r = Character("Your name")
+define me = Character("Your name")
 
 label start:
     scene bg black
     with fade
 
     show firstname sad at top
-    r "I am shocked"
-    r "What is that?"
+    me "I am shocked"
+    me "What is that?"
 
     show villain at left
     with moveinright
@@ -216,15 +216,15 @@ Based on what you've learned, try to explain to yourself the newly added lines. 
 14. Now let's add a decision for the player:
 
 ```
-define r = Character("Your name")
+define me = Character("Your name")
 
 label start:
     scene bg black
     with fade
 
     show firstname sad at top
-    r "I am shocked"
-    r "What is that?"
+    me "I am shocked"
+    me "What is that?"
 
     show villain at left
     with moveinright
@@ -252,15 +252,15 @@ label bad_ending:
 15. Hiding characters and adding special effect
 
 ```
-define r = Character("Your name")
+define me = Character("Your name")
 
 label start:
     scene bg black
     with fade
 
     show firstname sad at top
-    r "I am shocked"
-    r "What is that?"
+    me "I am shocked"
+    me "What is that?"
 
     show villain at left
     with moveinright
